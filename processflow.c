@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define MAX_TOKENS 64
+
 int main(int argc, char **argv) {
     FILE *input = stdin;
     int interativo = 1;
@@ -25,13 +27,23 @@ int main(int argc, char **argv) {
             printf("processflow> ");
             fflush(stdout);
         }
-        if (!fgets(linha, sizeof linha, input)) break;
+        if (!fgets(linha, sizeof(linha), input)) break;
         linha[strcspn(linha, "\n")] = '\0';
 
         if (strlen(linha) == 0) continue;
         if (!interativo) printf("%s\n", linha);
 
         if (strcmp(linha, "exit") == 0) break;
+
+        char *tokens[MAX_TOKENS];
+        int n = 0;
+
+        char *palavra = strtok(linha, " \t");
+        while (palavra != NULL && n < MAX_TOKENS - 1) {
+            tokens[n++] = palavra;
+            palavra = strtok(NULL, " \t");
+        }
+        tokens[n] = NULL;
     }
 
     if (argc == 2) fclose(input);

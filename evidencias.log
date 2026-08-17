@@ -1,0 +1,28 @@
+Script started on 2026-08-17 19:44:08-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="158" LINES="13"]
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ date
+[?2004lMon Aug 17 19:44:13 -03 2026
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ whj[Koami
+[?2004lskickle
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ pwd
+[?2004l/home/skickle/ProcessFlow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean
+[?2004lrm -f processflow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow
+[?2004lprocessflow> teste
+processflow> 
+processflow> ee
+processflow> exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow teste.pf
+[?2004lolá
+hello
+sndisd
+exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit[K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit[K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit[K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit[K[K[K[K[7mpgrep -a script[27mpgrep -a script
+[?2004l674802 script -a evidencias.log
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ echo teste
+[?2004lteste
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ kill 674802
+[?2004l
+Script done on 2026-08-17 19:50:12-03:00 [COMMAND_EXIT_CODE="0"]

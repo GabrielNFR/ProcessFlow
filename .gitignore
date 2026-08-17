@@ -1,3 +1,5 @@
 *.pf
 processflow
 *.o
+*.md
+!README.md
