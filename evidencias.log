@@ -26,3 +26,97 @@ exit
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ kill 674802
 [?2004l
 Script done on 2026-08-17 19:50:12-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-18 18:18:29-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="230" LINES="13"]
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ grep teste evidencias.log[1Pscript -a[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Ppgrep -a script[4Pkill 670610pgrep -a script[5Pgrep testetail -f evidencias.log./processflow teste.pf[Kmake[K cleancat -A Makefile[5Pmake cleanpwd[Kwhoami[2Pdatescript -a evidencias.logdate[Kwhoami[3Ppwd[K[K[Kdate
+[?2004lTue Aug 18 18:19:09 -03 2026
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ whom[Kami
+[?2004lskickle
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ pwd
+[?2004l/home/skickle/ProcessFlow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ amek[K[K[K[Kmake clean
+[?2004lrm -f processflow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -o processflow processflow.c
+[1mprocessflow.c:56:13: [0m[0;1;31merror: [0m[1mnon-void function 'main' should return a value [-Wreturn-type][0m
+   56 |             return;[0m
+      | [0;1;32m            ^
+[0m[1mprocessflow.c:60:13: [0m[0;1;31merror: [0m[1mnon-void function 'main' should return a value [-Wreturn-type][0m
+   60 |             return;[0m
+      | [0;1;32m            ^
+[0m[1mprocessflow.c:66:17: [0m[0;1;31merror: [0m[1mnon-void function 'main' should return a value [-Wreturn-type][0m
+   66 |                 return;[0m
+      | [0;1;32m                ^
+[0m3 errors generated.
+make: *** [Makefile:2: processflow] Error 1
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow
+[?2004lprocessflow> task teste argteste1 argteste2 argteste 3  3
+Segmentation fault (core dumped)
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make./processflow
+[?2004lprocessflow> task teste argteste1
+Segmentation fault (core dumped)
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make./processflow
+[?2004lprocessflow> ^[[A^[[A^[[A            teste     task teste argteste
+Segmentation fault (core dumped)
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make./processflow
+[?2004lprocessflow> task teste argteste
+Segmentation fault (core dumped)
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ mmake[K[K[K[Kake
+[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lmake: 'processflow' is up to date.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean
+[?2004lrm -f processflow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean[K
+[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ p[K./pro[Kocess [Kflow
+[?2004lprocessflow> tes  ask teste argteste
+processflow>   exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ processflow[K[K[K[K[K[K[K[K[K[K[K./processflowmake[K./processflow
+[?2004lprocessflow> task teste argteste1 argteste2 argteste3
+processflow>    
+Segmentation fault (core dumped)
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exi[K[K[K./processflow
+[?2004lprocessflow> task teste argteste
+processflow> ^[[A    task teste argteste
+processflow> exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflowmake[K
+[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make./processflowmake[K./processflow
+[?2004lprocessflow> task teste argteste
+processflow>    
+processflow> ^[[A^[[A        task teste argteste
+processflow> exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ m[Ktask teste argteste1 argteste 2[K[K2 argteste 3[K[K3
+[?2004lCommand 'task' not found, but can be installed with:
+sudo snap install task         # version v3.51.1, or
+sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
+See 'snap info task' for additional versions.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$  [Ktask teste argteste1 argteste2 argteste3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./processflow[K
+[?2004lprocessflow> task teste argteste1 argteste2 argteste3
+processflow>     
+processflow> exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make cçlea[K[K[K[Klean
+[?2004lrm -f processflow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean./processflow
+[?2004lprocessflow> task argteste        teste argteste
+processflow> task teste argteste
+Erro: task teste já existe
+processflow> ^[[A    task teste art g
+Erro: task teste já existe
+processflow> exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-18 19:52:14-03:00 [COMMAND_EXIT_CODE="0"]

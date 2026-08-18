@@ -1,10 +1,14 @@
+#define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_TOKENS 64
+#include "processflow.h"
 
 int main(int argc, char **argv) {
+    Task tasks [MAX_TASKS];
+    int numTasks = 0;
+    
     FILE *input = stdin;
     int interativo = 1;
 
@@ -35,6 +39,7 @@ int main(int argc, char **argv) {
 
         if (strcmp(linha, "exit") == 0) break;
 
+        // tokenização
         char *tokens[MAX_TOKENS];
         int n = 0;
 
@@ -44,6 +49,42 @@ int main(int argc, char **argv) {
             palavra = strtok(NULL, " \t");
         }
         tokens[n] = NULL;
+        if (n == 0) continue;
+
+        // task
+        if (strcmp(tokens[0], "task") == 0) {  
+            if (n < 3) {
+                fprintf(stderr, "Uso: task <nome> <programa> <...>\n");
+                continue;
+            }
+            if (numTasks == MAX_TASKS) {
+                fprintf(stderr, "Erro: limite de tasks atingido\n");
+                continue;
+            }
+
+            int existe = 0;
+            for (int i = 0; i < numTasks; i++) {
+                if (strcmp(tokens[1], tasks[i].nome) == 0) {
+                    existe = 1;
+                    break;
+                }   
+            }
+            if (existe) {
+                fprintf(stderr, "Erro: task %s já existe\n", tokens[1]);
+                continue;
+            }
+            
+            Task *t = &tasks[numTasks];
+            t->nome = strdup(tokens[1]);
+            t->programa =strdup(tokens[2]);
+            t->args[0] = strdup(tokens[2]);
+            int j = 1;
+            for (int i = 3; i < n; i++) {
+                t->args[j++] = strdup(tokens[i]);
+            }
+            t->args[j] = NULL;
+            numTasks++;
+        }
     }
 
     if (argc == 2) fclose(input);
