@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
+#include <sys/wait.h>
 
 #include "processflow.h"
 
@@ -76,7 +78,7 @@ int main(int argc, char **argv) {
             
             Task *t = &tasks[numTasks];
             t->nome = strdup(tokens[1]);
-            t->programa =strdup(tokens[2]);
+            t->programa = strdup(tokens[2]);
             t->args[0] = strdup(tokens[2]);
             int j = 1;
             for (int i = 3; i < n; i++) {
@@ -85,8 +87,61 @@ int main(int argc, char **argv) {
             t->args[j] = NULL;
             numTasks++;
         }
-    }
 
+        //run
+        if (strcmp(tokens[0], "run") == 0) {
+            if (n < 3) {
+                fprintf(stderr, "Uso: run <modo> <task1> <...>\n");
+                continue;
+            }
+            if (strcmp(tokens[1], "sequential") != 0 && strcmp(tokens[1], "parallel") != 0) {
+                fprintf(stderr, "Escolha um dos modos válidos: 'sequential' ou 'parallel'\n");
+                continue;
+            }
+
+            pid_t pids[MAX_TASKS];  
+            int k = 0;              
+            int status;            
+
+            for (int i = 2; i < n; i++) {
+                Task *t = NULL;
+                for (int j = 0; j < numTasks; j++) {
+                    if (strcmp(tokens[i], tasks[j].nome) == 0) {
+                        t = &tasks[j];
+                        break;
+                    }
+                }
+                if (t == NULL) {
+                    fprintf(stderr, "Erro: tarefa não existe.\n");
+                    continue;
+                }
+                
+                pid_t pid = fork();
+                if (pid < 0) {
+                    fprintf(stderr, "Erro: fork falhou.\n");
+                    continue;
+                }
+                else if (pid == 0) {
+                    execvp(t->programa, t->args);
+                    perror("Erro: exec falhou.");
+                    _exit(1);
+                }
+                else if (pid > 0) {
+                    if (strcmp(tokens[1], "sequential") == 0) {
+                        waitpid(pid, &status, 0);
+                    }
+                    else if (strcmp(tokens[1], "parallel") == 0) {
+                        pids[k++] = pid;
+                    }
+                }
+            }
+            if (strcmp(tokens[1], "parallel") == 0) {
+                for (int i = 0; i < k; i++) {
+                    waitpid(pids[i], &status, 0);
+                }
+            }
+        }
+    }
     if (argc == 2) fclose(input);
     return 0;
 }
