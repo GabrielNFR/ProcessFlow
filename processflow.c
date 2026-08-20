@@ -91,26 +91,36 @@ int main(int argc, char **argv) {
         if (strcmp(tokens[0], "run") == 0) {
             int pipes[MAX_TASKS - 1][2];
 
-            if (n < 3) {
-                fprintf(stderr, "Uso: run <modo> <task1> <...>\n");
+            if (n < 2) {
+                fprintf(stderr, "Uso: run <tarefa> | run <modo> <tarefa1> <...>\n");
                 continue;
             }
-            if (strcmp(tokens[1], "sequential") != 0 && strcmp(tokens[1], "parallel") != 0 && strcmp(tokens[1], "pipe") != 0) {
-                fprintf(stderr, "Escolha um dos modos válidos: 'sequential' ou 'parallel'\n");
-                continue;
+
+            char *modo;
+            int start;
+            if (strcmp(tokens[1], "sequential") == 0 || strcmp(tokens[1], "parallel") == 0 || strcmp(tokens[1], "pipe") == 0) {
+                modo = tokens[1];
+                start = 2;
+                if (n < 3) {
+                    fprintf(stderr, "Uso: run <modo> <tarefa1> <...>\n");
+                    continue;
+                }
+            } else {
+                modo = "sequential";   
+                start = 1;
             }
 
             pid_t pids[MAX_TASKS];  
             int k = 0;              
             int status;            
 
-            if (strcmp(tokens[1], "pipe") == 0) {
-                for (int i = 0; i < n-3; i++) {
+            if (strcmp(modo, "pipe") == 0) {
+                for (int i = 0; i < n - start - 1; i++) {
                     pipe(pipes[i]);
                 }
             }
 
-            for (int i = 2; i < n; i++) {
+            for (int i = start; i < n; i++) {
                 Task *t = NULL;
                 for (int j = 0; j < numTasks; j++) {
                     if (strcmp(tokens[i], tasks[j].nome) == 0) {
@@ -119,7 +129,7 @@ int main(int argc, char **argv) {
                     }
                 }
                 if (t == NULL) {
-                    fprintf(stderr, "Erro: tarefa não existe.\n");
+                    fprintf(stderr, "Erro: tarefa '%s' não existe.\n", tokens[i]);
                     continue;
                 }
                 
@@ -129,15 +139,15 @@ int main(int argc, char **argv) {
                     continue;
                 }
                 else if (pid == 0) {
-                    if (strcmp(tokens[1], "pipe") == 0) {
-                        int pos = i - 2;
+                    if (strcmp(modo, "pipe") == 0) {
+                        int pos = i - start;
                         if (pos > 0) {
                             dup2(pipes[pos - 1][0], 0);
                         }
-                        if  (pos < n - 3) {
+                        if (pos < n - start - 1) {
                             dup2(pipes[pos][1], 1);
                         }
-                        for (int p = 0; p < n - 3; p++) {
+                        for (int p = 0; p < n - start - 1; p++) {
                             close(pipes[p][0]);
                             close(pipes[p][1]);
                         }
@@ -147,24 +157,89 @@ int main(int argc, char **argv) {
                     _exit(1);
                 }
                 else if (pid > 0) {
-                    if (strcmp(tokens[1], "sequential") == 0) {
+                    if (strcmp(modo, "sequential") == 0) {
                         waitpid(pid, &status, 0);
                     }
-                    else if (strcmp(tokens[1], "parallel") == 0 || strcmp(tokens[1], "pipe") == 0) {
+                    else if (strcmp(modo, "parallel") == 0 || strcmp(modo, "pipe") == 0) {
                         pids[k++] = pid;
                     }
                 }
             }
-            if (strcmp(tokens[1], "pipe") == 0) {
-                for (int p = 0; p < n - 3; p++) {
+            if (strcmp(modo, "pipe") == 0) {
+                for (int p = 0; p < n - start - 1; p++) {
                     close(pipes[p][0]);
                     close(pipes[p][1]);
                 }
             }
-            if (strcmp(tokens[1], "parallel") == 0 || strcmp(tokens[1], "pipe") == 0) {
+            if (strcmp(modo, "parallel") == 0 || strcmp(modo, "pipe") == 0) {
                 for (int i = 0; i < k; i++) {
                     waitpid(pids[i], &status, 0);
                 }
+            }
+        }
+
+        //input
+        if (strcmp(tokens[0], "input") == 0) {
+            if (n < 3) {
+                fprintf(stderr, "Uso: input <tarefa> <arquivo>\n");
+                continue;
+            }
+            
+            Task *t = NULL;
+            for (int j = 0; j < numTasks; j++) {
+                if (strcmp(tokens[1], tasks[j].nome) == 0) {
+                    t = &tasks[j];
+                    t->inputFile = strdup(tokens[2]);
+                    break;
+                }
+            }
+            if (t == NULL) {
+                fprintf(stderr, "Erro: tarefa não existe.\n");
+                continue;
+            }
+        }
+
+        //output
+        if (strcmp(tokens[0], "output") == 0) {
+            if (n < 3) {
+                fprintf(stderr, "Uso: output <tarefa> <arquivo>\n");
+                continue;
+            }
+            
+            Task *t = NULL;
+            for (int j = 0; j < numTasks; j++) {
+                if (strcmp(tokens[1], tasks[j].nome) == 0) {
+                    t = &tasks[j];
+                    t->outputFile = strdup(tokens[2]);
+                    t->append = 0;
+                    break;
+                }
+            }
+            if (t == NULL) {
+                fprintf(stderr, "Erro: tarefa não existe.\n");
+                continue;
+            }
+        }
+
+        //append
+        if (strcmp(tokens[0], "append") == 0) {
+            if (n < 3) {
+                fprintf(stderr, "Uso: append <tarefa> <arquivo>\n");
+                continue;
+            }
+            
+            Task *t = NULL;
+            for (int j = 0; j < numTasks; j++) {
+                if (strcmp(tokens[1], tasks[j].nome) == 0) {
+                    t = &tasks[j];
+                    t->outputFile = strdup(tokens[2]);
+                    t->append = 1;
+                    break;
+                }
+            }
+            if (t == NULL) {
+                fprintf(stderr, "Erro: tarefa não existe.\n");
+                continue;
             }
         }
     }

@@ -336,4 +336,73 @@ processflow> total 68
 -rw-r--r-- 1 skickle skickle 16002 Aug 19 17:35 evidencias.log
 -rwxr-xr-x 1 skickle skickle 16936 Aug 20 13:18 processflow
 -rw-r--r-- 1 skickle skickle  4634 Aug 20 13:19 processflow.c
--rw-r--r-- 1 skickle skickle   319 Aug 19 16:22 process
+-rw-r--r-- 1 skickle skickle   319 Aug 19 16:22 processflow.h
+-rw-r--r-- 1 skickle skickle    22 Aug 17 17:13 teste.pf
+^Z
+[3]+  Stopped                 ./processflow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean && make
+[?2004lrm -f processflow
+clang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow
+[?2004lprocessflow> task listar /bin/ls -l
+processflow> task ordenar /usr/bin/sort
+processflow> task contar /usr/bin/wc -l
+processflow> run pipe listar ordenar contar
+9
+processflow> exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[?2004lexit
+There are stopped jobs.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-20 14:46:05-03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2026-08-20 19:01:06-03:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="159" LINES="13"]
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make ck[Klean && make
+[?2004lrm -f processflow
+clang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow
+[?2004lprocessflow> processflow> task listar /bin/ls -l^Z
+[1]+  Stopped                 ./processflow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow
+[?2004lprocessflow> task listar             task listar /bin/ls -l
+processflow> task ordenar /usr/bin/sort
+processflow> task contar /usr/bin/wc -l
+processflow> task dormir /bin/sleep 2
+processflow> run listar
+total 80
+-rw-r--r-- 1 skickle skickle   130 Aug 19 17:39 Makefile
+-rw-r--r-- 1 skickle skickle    13 Aug 17 16:01 README.md
+-rw-r--r-- 1 skickle skickle  8157 Aug 20 14:48 Relatorio.md
+-rw-r--r-- 1 skickle skickle 21298 Aug 20 14:46 evidencias.log
+-rwxr-xr-x 1 skickle skickle 21112 Aug 20 19:01 processflow
+-rw-r--r-- 1 skickle skickle  7640 Aug 20 18:57 processflow.c
+-rw-r--r-- 1 skickle skickle   319 Aug 19 16:22 processflow.h
+-rw-r--r-- 1 skickle skickle    22 Aug 17 17:13 teste.pf
+processflow> run sequential listar
+total 80
+-rw-r--r-- 1 skickle skickle   130 Aug 19 17:39 Makefile
+-rw-r--r-- 1 skickle skickle    13 Aug 17 16:01 README.md
+-rw-r--r-- 1 skickle skickle  8157 Aug 20 14:48 Relatorio.md
+-rw-r--r-- 1 skickle skickle 21298 Aug 20 14:46 evidencias.log
+-rwxr-xr-x 1 skickle skickle 21112 Aug 20 19:01 processflow
+-rw-r--r-- 1 skickle skickle  7640 Aug 20 18:57 processflow.c
+-rw-r--r-- 1 skickle skickle   319 Aug 19 16:22 processflow.h
+-rw-r--r-- 1 skickle skickle    22 Aug 17 17:13 teste.pf
+processflow> run poa  arallel dormir dormir
+processflow> run pipe listar ordenar contar
+9
+processflow> run
+Uso: run <tarefa> | run <modo> <tarefa1> <...>
+processflow> run sequential
+Uso: run <modo> <tarefa1> <...>
+processflow> run naoexiste
+Erro: tarefa 'naoexiste' não existe.
+processflow> exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[?2004lexit
+There are stopped jobs.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-20 19:03:22-03:00 [COMMAND_EXIT_CODE="1"]
