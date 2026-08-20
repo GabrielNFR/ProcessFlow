@@ -1,42 +1,80 @@
 Script started on 2026-08-17 19:44:08-03:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="158" LINES="13"]
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ date
-[?2004lMon Aug 17 19:44:13 -03 2026
+[?2004l
+Mon Aug 17 19:44:13 -03 2026
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ whj[Koami
-[?2004lskickle
+[?2004l
+skickle
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ pwd
-[?2004l/home/skickle/ProcessFlow
+[?2004l
+/home/skickle/ProcessFlow
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean
-[?2004lrm -f processflow
+[?2004l
+rm -f processflow
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
-[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow
-[?2004lprocessflow> teste
+[?2004l
+processflow> teste
 processflow> 
 processflow> ee
 processflow> exit
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow teste.pf
-[?2004lolá
+[?2004l
+olá
 hello
 sndisd
 exit
-[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit[K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit[K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit[K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit[K[K[K[K[7mpgrep -a script[27mpgrep -a script
-[?2004l674802 script -a evidencias.log
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[K
+]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[K
+]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[K
+]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit[K[K[K[K[7mpgrep -a script[27mpgrep -a script
+[?2004l
+674802 script -a evidencias.log
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ echo teste
-[?2004lteste
-[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ kill 674802
+[?2004l
+teste
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ 
+[K
+]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ kill 674802
 [?2004l
 Script done on 2026-08-17 19:50:12-03:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-08-18 18:18:29-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="230" LINES="13"]
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ grep teste evidencias.log[1Pscript -a[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Ppgrep -a script[4Pkill 670610pgrep -a script[5Pgrep testetail -f evidencias.log./processflow teste.pf[Kmake[K cleancat -A Makefile[5Pmake cleanpwd[Kwhoami[2Pdatescript -a evidencias.logdate[Kwhoami[3Ppwd[K[K[Kdate
-[?2004lTue Aug 18 18:19:09 -03 2026
+[?2004l
+Tue Aug 18 18:19:09 -03 2026
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ whom[Kami
-[?2004lskickle
+[?2004l
+skickle
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ pwd
-[?2004l/home/skickle/ProcessFlow
-[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ amek[K[K[K[Kmake clean
-[?2004lrm -f processflow
+[?2004l
+/home/skickle/ProcessFlow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ 
+[K
+]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ 
+[K
+]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ 
+[K
+]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ 
+[K
+]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ 
+[K
+]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ 
+[K
+]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ 
+[K
+]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ 
+[K
+]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ amek[K[K[K[Kmake clean
+[?2004l
+rm -f processflow
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
-[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
 [1mprocessflow.c:56:13: [0m[0;1;31merror: [0m[1mnon-void function 'main' should return a value [-Wreturn-type][0m
    56 |             return;[0m
       | [0;1;32m            ^
@@ -49,354 +87,253 @@ Script started on 2026-08-18 18:18:29-03:00 [TERM="xterm-256color" TTY="/dev/pts
 [0m3 errors generated.
 make: *** [Makefile:2: processflow] Error 1
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
-[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
-[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow
-[?2004lprocessflow> task teste argteste1 argteste2 argteste 3  3
+[?2004l
+processflow> task teste argteste1 argteste2 argteste 3  3
 Segmentation fault (core dumped)
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
-[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make./processflow
-[?2004lprocessflow> task teste argteste1
+[?2004l
+processflow> task teste argteste1
 Segmentation fault (core dumped)
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
-[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make./processflow
-[?2004lprocessflow> ^[[A^[[A^[[A            teste     task teste argteste
+[?2004l
+processflow> ^[[A^[[A^[[A            teste     task teste argteste
 Segmentation fault (core dumped)
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
-[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make./processflow
-[?2004lprocessflow> task teste argteste
+[?2004l
+processflow> task teste argteste
 Segmentation fault (core dumped)
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ mmake[K[K[K[Kake
-[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
-[?2004lmake: 'processflow' is up to date.
+[?2004l
+make: 'processflow' is up to date.
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean
-[?2004lrm -f processflow
+[?2004l
+rm -f processflow
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean[K
-[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ p[K./pro[Kocess [Kflow
-[?2004lprocessflow> tes  ask teste argteste
+[?2004l
+processflow> tes  ask teste argteste
 processflow>   exit
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ processflow[K[K[K[K[K[K[K[K[K[K[K./processflowmake[K./processflow
-[?2004lprocessflow> task teste argteste1 argteste2 argteste3
+[?2004l
+processflow> task teste argteste1 argteste2 argteste3
 processflow>    
 Segmentation fault (core dumped)
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exi[K[K[K./processflow
-[?2004lprocessflow> task teste argteste
+[?2004l
+processflow> task teste argteste
 processflow> ^[[A    task teste argteste
 processflow> exit
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflowmake[K
-[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make./processflowmake[K./processflow
-[?2004lprocessflow> task teste argteste
+[?2004l
+processflow> task teste argteste
 processflow>    
 processflow> ^[[A^[[A        task teste argteste
 processflow> exit
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ m[Ktask teste argteste1 argteste 2[K[K2 argteste 3[K[K3
-[?2004lCommand 'task' not found, but can be installed with:
+[?2004l
+Command 'task' not found, but can be installed with:
 sudo snap install task         # version v3.51.1, or
 sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
 See 'snap info task' for additional versions.
-[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$  [Ktask teste argteste1 argteste2 argteste3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./processflow[K
-[?2004lprocessflow> task teste argteste1 argteste2 argteste3
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$  [Ktask teste argteste1 argteste2 argteste3
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./processflow[K
+[?2004l
+processflow> task teste argteste1 argteste2 argteste3
 processflow>     
 processflow> exit
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make cçlea[K[K[K[Klean
-[?2004lrm -f processflow
+[?2004l
+rm -f processflow
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
-[?2004lclang -Wall -Wextra -o processflow processflow.c
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean./processflow
-[?2004lprocessflow> task argteste        teste argteste
+[?2004l
+processflow> task argteste        teste argteste
 processflow> task teste argteste
 Erro: task teste já existe
 processflow> ^[[A    task teste art g
 Erro: task teste já existe
 processflow> exit
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
-[?2004lexit
+[?2004l
+exit
 
 Script done on 2026-08-18 19:52:14-03:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-08-19 15:56:01-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="148" LINES="13"]
-[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit./processflowmake[K clean./processflowtask teste argteste1 argteste2 argteste3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./processflow[Kmake[K./processflowmake[K clean[K./processflowmake[K./processflowmake[K./processflowmake[K./processflowmake[K cleanpwd[Kwhoami[2Pdatetail -f evidencias.logdate[Kwhoami[3Ppwd[K[K[Kdate
-[?2004lWed Aug 19 16:28:09 -03 2026
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit./processflowmake[K clean./processflowtask teste argteste1 argteste2 argteste3
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./processflow[Kmake[K./processflowmake[K clean[K./processflowmake[K./processflowmake[K./processflowmake[K./processflowmake[K cleanpwd[Kwhoami[2Pdatetail -f evidencias.logdate[Kwhoami[3Ppwd[K[K[Kdate
+[?2004l
+Wed Aug 19 16:28:09 -03 2026
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ whoami
+[?2004l
+skickle
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ pwd
+[?2004l
+/home/skickle/ProcessFlow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ man exec
+[?2004l
+[?1049h[22;0;0t[?1h=
+[K[?1l>[?1049l[23;0;0t[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
+[1mprocessflow.c:115:53: [0m[0;1;35mwarning: [0m[1mmore '%' conversions than data arguments [-Wformat-insufficient-args][0m
+  115 |                     fprintf(stderr, "Erro: tarefa '%s' não existe.\n");[0m
+      | [0;1;32m                                                   ~^
+[0m[1mprocessflow.c:147:2: [0m[0;1;31merror: [0m[1mexpected '}'[0m
+  147 | }[0m
+      | [0;1;32m ^
+[0m[1mprocessflow.c:10:33: [0m[0;1;36mnote: [0mto match this '{'[0m
+   10 | int main(int argc, char **argv) {[0m
+      | [0;1;32m                                ^
+[0m1 warning and 1 error generated.
+make: *** [Makefile:2: processflow] Error 1
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
+[1mprocessflow.c:115:53: [0m[0;1;35mwarning: [0m[1mmore '%' conversions than data arguments [-Wformat-insufficient-args][0m
+  115 |                     fprintf(stderr, "Erro: tarefa '%s' não existe.\n");[0m
+      | [0;1;32m                                                   ~^
+[0m1 warning generated.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ls -l /bin/ls
+[?2004l
+-rwxr-xr-x 1 root root 142312 Jan 23  2026 [0m[01;32m/bin/ls[0m
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ which sort
+[?2004l
+/usr/bin/sort
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ which wc
+[?2004l
+/usr/bin/wc
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004l
+clang -Wall -Wextra -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ,/[K[K./processflow
+[?2004l
+processflow> task listar /bin/ls -l
+processflow> run sequential listar
+total 120
+-rw-r--r-- 1 skickle skickle   104 Aug 17 19:35 Makefile
+-rw-r--r-- 1 skickle skickle    13 Aug 17 16:01 README.md
+-rw-r--r-- 1 skickle skickle  6422 Aug 18 19:59 Relatorio.md
+-rw-r--r-- 1 skickle skickle 63657 Aug 19 16:44 evidencias.log
+-rwxr-xr-x 1 skickle skickle 16888 Aug 19 17:15 processflow
+-rw-r--r-- 1 skickle skickle  4350 Aug 19 17:15 processflow.c
+-rw-r--r-- 1 skickle skickle   319 Aug 19 16:22 processflow.h
+-rw-r--r-- 1 skickle skickle    22 Aug 17 17:13 teste.pf
+processflow> exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ runsequen[K[K[K[K[K[K sequential dormir dormir dormir[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktask dormir /bin/sleep 2
+[?2004l
+Command 'task' not found, but can be installed with:
+sudo snap install task         # version v3.51.1, or
+sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
+See 'snap info task' for additional versions.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ p[K./processflow 
+[?2004l
+processflow> task formir             ^[[A^[[A        run sequential listar
+Erro: tarefa não existe.
+processflow> task dormir /bin/sleep 2
+processflow> run sequential dormir dormir dormir
+processflow> sd  s run parallel dormir dormir dormir
+d processflow> run sequential naoexiste
+Erro: tarefa não existe.
+processflow> task listar          dormir dsds
+Erro: task dormir já existe
+processflow> exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[?2004l
+exit
+
+Script done on 2026-08-19 17:32:04-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-20 12:53:35-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="13"]
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ date
+[?2004lThu Aug 20 12:53:41 -03 2026
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ whoami
 [?2004lskickle
 [?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ pwd
 [?2004l/home/skickle/ProcessFlow
-[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ man exec
-[?2004l[?1049h[22;0;0t[?1h=[4mexec[24m(n)                                                       Tcl Built-In Commands                                                      [4mexec[24m(n)[m
-[m
-________________________________________________________________________________________________________________________________________________[m
-[m
-[1mNAME[0m[m
-       exec - Invoke subprocesses[m
-[m
-[1mSYNOPSIS[0m[m
-       [1mexec [22m?[4mswitches[24m? [4marg[24m ?[4marg[24m [4m...[24m? ?[1m&[22m?[m
-________________________________________________________________________________________________________________________________________________[m
-[m
-[1mDESCRIPTION[0m[m
-[7m Manual page exec(n) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This command treats its arguments as the specification of one or more subprocesses to execute.  The arguments take the form of a standard[m
-[7m Manual page exec(n) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       shell  pipeline  where each [4marg[24m becomes one word of a command, and each distinct command becomes a subprocess.  The result of the command[m
-[7m Manual page exec(n) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       is the standard output of the final subprocess in the pipeline, interpreted using the system [1mencoding[22m; to use any other  encoding  (espe‐[m
-[7m Manual page exec(n) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       cially including binary data), the pipeline must be [1mopen[22med, configured and read explicitly.[m
-[7m Manual page exec(n) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If  the initial arguments to [1mexec [22mstart with [1m- [22mthen they are treated as command-line switches and are not part of the pipeline specifica‐[m
-[7m Manual page exec(n) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tion.  The following switches are currently supported:[m
-[7m Manual page exec(n) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-ignorestderr[0m[m
-[7m Manual page exec(n) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                    Stops the [1mexec [22mcommand from treating the output of messages to the pipeline's standard error channel as an error case.[m
-[7m Manual page exec(n) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-keepnewline [22mRetains a trailing newline in the pipeline's output.  Normally a trailing newline will be deleted.[m
-[7m Manual page exec(n) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--           [22mMarks the end of switches.  The argument following this one will be treated as the first [4marg[24m even if it starts with a [1m-[22m.[m
-[7m Manual page exec(n) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If an [4marg[24m (or pair of [4marg[24ms) has one of the forms described below then it is used by [1mexec [22mto control the flow of input  and  output  among[m
-[7m Manual page exec(n) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the subprocess(es).  Such arguments will not be passed to the subprocess(es).  In forms such as “[1m< [4m[22mfileName[24m”, [4mfileName[24m may either be in a[m
-[7m Manual page exec(n) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       separate argument from “[1m<[22m” or in the same argument with no intervening space (i.e.  “[1m<[4m[22mfileName[24m”).[m
-[7m Manual page exec(n) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m|              [22mSeparates distinct commands in the pipeline.  The standard output of the preceding command will be piped into the standard[m
-[7m Manual page exec(n) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      input of the next command.[m
-[7m Manual page exec(n) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m|&             [22mSeparates  distinct  commands  in  the pipeline.  Both standard output and standard error of the preceding command will be[m
-[7m Manual page exec(n) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      piped into the standard input of the next command.  This form of redirection overrides forms such as 2> and >&.[m
-[7m Manual page exec(n) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m< [4m[22mfileName[24m     The file named by [4mfileName[24m is opened and used as the standard input for the first command in the pipeline.[m
-[7m Manual page exec(n) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m<@ [4m[22mfileId[24m      [4mFileId[24m must be the identifier for an open file, such as the return value from a previous call to [1mopen[22m.  It is used as  the[m
-[7m Manual page exec(n) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      standard input for the first command in the pipeline.  [4mFileId[24m must have been opened for reading.[m
-[7m Manual page exec(n) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m<< [4m[22mvalue[24m       [4mValue[24m is passed to the first command as its standard input.[m
-[7m Manual page exec(n) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m> [4m[22mfileName[24m     Standard output from the last command is redirected to the file named [4mfileName[24m, overwriting its previous contents.[m
-[7m Manual page exec(n) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m2> [4m[22mfileName[24m    Standard  error  from all commands in the pipeline is redirected to the file named [4mfileName[24m, overwriting its previous con‐[m
-[7m Manual page exec(n) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      tents.[m
-[7m Manual page exec(n) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m>& [4m[22mfileName[24m    Both standard output from the last command and standard error from all commands are redirected to the file named [4mfileName[24m,[m
-[7m Manual page exec(n) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      overwriting its previous contents.[m
-[7m Manual page exec(n) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m>> [4m[22mfileName[24m    Standard output from the last command is redirected to the file named [4mfileName[24m, appending to it  rather  than  overwriting[m
-[7m Manual page exec(n) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      it.[m
-[7m Manual page exec(n) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m2>> [4m[22mfileName[24m   Standard  error  from  all  commands in the pipeline is redirected to the file named [4mfileName[24m, appending to it rather than[m
-[7m Manual page exec(n) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      overwriting it.[m
-[7m Manual page exec(n) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m>>& [4m[22mfileName[24m   Both standard output from the last command and standard error from all commands are redirected to the file named [4mfileName[24m,[m
-[7m Manual page exec(n) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      appending to it rather than overwriting it.[m
-[7m Manual page exec(n) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m>@ [4m[22mfileId[24m      [4mFileId[24m must be the identifier for an open file, such as the return value from a previous call to  [1mopen[22m.   Standard  output[m
-[7m Manual page exec(n) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      from the last command is redirected to [4mfileId[24m's file, which must have been opened for writing.[m
-[7m Manual page exec(n) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m2>@ [4m[22mfileId[24m     [4mFileId[24m  must  be  the  identifier for an open file, such as the return value from a previous call to [1mopen[22m.  Standard error[m
-[7m Manual page exec(n) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      from all commands in the pipeline is redirected to [4mfileId[24m's file.  The file must have been opened for writing.[m
-[7m Manual page exec(n) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m2>@1           [22mStandard error from all commands in the pipeline is redirected to the command result.  This operator is only valid at  the[m
-[7m Manual page exec(n) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      end of the command pipeline.[m
-[7m Manual page exec(n) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m>&@ [4m[22mfileId[24m     [4mFileId[24m must be the identifier for an open file, such as the return value from a previous call to [1mopen[22m.  Both standard out‐[m
-[7m Manual page exec(n) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      put  from  the last command and standard error from all commands are redirected to [4mfileId[24m's file.  The file must have been[m
-[7m Manual page exec(n) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      opened for writing.[m
-[7m Manual page exec(n) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If standard output has not been redirected then the [1mexec [22mcommand returns the standard output from the last command in the  pipeline,  un‐[m
-[7m Manual page exec(n) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       less  “2>@1”  was specified, in which case standard error is included as well.  If any of the commands in the pipeline exit abnormally or[m
-[7m Manual page exec(n) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       are killed or suspended, then [1mexec [22mwill return an error and the error message will include the pipeline's output followed by  error  mes‐[m
-[7m Manual page exec(n) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       sages describing the abnormal terminations; the [1m-errorcode [22mreturn option will contain additional information about the last abnormal ter‐[m
-[7m Manual page exec(n) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       mination  encountered.  If any of the commands writes to its standard error file and that standard error is not redirected and [1m-ignorest‐[0m[m
-[7m Manual page exec(n) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mderr [22mis not specified, then [1mexec [22mwill return an error;  the error message will include the pipeline's standard output, followed  by  mes‐[m
-[7m Manual page exec(n) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       sages about abnormal terminations (if any), followed by the standard error output.[m
-[7m Manual page exec(n) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If  the  last character of the result or error message is a newline then that character is normally deleted from the result or error mes‐[m
-[7m Manual page exec(n) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       sage.  This is consistent with other Tcl return values, which do not normally end with newlines.  However, if [1m-keepnewline  [22mis  specified[m
-[7m Manual page exec(n) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       then the trailing newline is retained.[m
-[7m Manual page exec(n) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If  standard  input  is not redirected with “<”, “<<” or “<@” then the standard input for the first command in the pipeline is taken from[m
-[7m Manual page exec(n) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the application's current standard input.[m
-[7m Manual page exec(n) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If the last [4marg[24m is “&” then the pipeline will be executed in background.  In this case the [1mexec [22mcommand will return a list whose elements[m
-[7m Manual page exec(n) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       are the process identifiers for all of the subprocesses in the pipeline.  The standard output from the last command in the pipeline  will[m
-[7m Manual page exec(n) line 80 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       go  to the application's standard output if it has not been redirected, and error output from all of the commands in the pipeline will go[m
-[7m Manual page exec(n) line 81 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       to the application's standard error file unless redirected.[m
-[7m Manual page exec(n) line 82 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 83 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The first word in each command is taken as the command name; tilde-substitution is performed on it, and if the result contains no slashes[m
-[7m Manual page exec(n) line 84 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       then the directories in the PATH environment variable are searched for an executable by the given name.  If the  name  contains  a  slash[m
-[7m Manual page exec(n) line 85 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       then it must refer to an executable reachable from the current directory.  No “glob” expansion or other shell-like substitutions are per‐[m
-[7m Manual page exec(n) line 86 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       formed on the arguments to commands.[m
-[7m Manual page exec(n) line 87 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 88 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mPORTABILITY ISSUES[0m[m
-[7m Manual page exec(n) line 89 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mWindows [22m(all versions)[m
-[7m Manual page exec(n) line 90 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Reading  from  or writing to a socket, using the “[1m@ [4m[22mfileId[24m” notation, does not work.  When reading from a socket, a 16-bit DOS ap‐[m
-[7m Manual page exec(n) line 91 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              plication will hang and a 32-bit application will return immediately with end-of-file.  When either type of application writes  to[m
-[7m Manual page exec(n) line 92 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              a socket, the information is instead sent to the console, if one is present, or is discarded.[m
-[7m Manual page exec(n) line 93 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 94 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Note  that  the current escape resp. quoting of arguments for windows works only with executables using CommandLineToArgv, CRT-li‐[m
-[7m Manual page exec(n) line 95 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              brary or similar, as well as with the windows batch files (excepting the newline, see below).  Although it is  the  common  escape[m
-[7m Manual page exec(n) line 96 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              algorithm, but, in fact, the way how the executable parses the command-line (resp. splits it into single arguments) is decisive.[m
-[7m Manual page exec(n) line 97 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 98 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Unfortunately,  there  is  currently no way to supply newline character within an argument to the batch files ([1m.cmd [22mor [1m.bat[22m) or to[m
-[7m Manual page exec(n) line 99 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the command processor ([1mcmd.exe /c[22m), because this causes truncation of command-line (also the argument chain) on the first  newline[m
-[7m Manual page exec(n) line 100 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              character.  But it works properly with an executable (using CommandLineToArgv, etc).[m
-[7m Manual page exec(n) line 101 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 102 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              The  Tk  console  text widget does not provide real standard IO capabilities.  Under Tk, when redirecting from standard input, all[m
-[7m Manual page exec(n) line 103 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              applications will see an immediate end-of-file; information redirected to standard output or standard error will be discarded.[m
-[7m Manual page exec(n) line 104 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 105 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Either forward or backward slashes are accepted as path separators for arguments to Tcl commands.  When executing an  application,[m
-[7m Manual page exec(n) line 106 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the  path  name specified for the application may also contain forward or backward slashes as path separators.  Bear in mind, how‐[m
-[7m Manual page exec(n) line 107 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ever, that most Windows applications accept arguments with forward slashes only as  option  delimiters  and  backslashes  only  in[m
-[7m Manual page exec(n) line 108 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              paths.   Any  arguments to an application that specify a path name with forward slashes will not automatically be converted to use[m
-[7m Manual page exec(n) line 109 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the backslash character.  If an argument contains forward slashes as the path separator, it may or may not be recognized as a path[m
-[7m Manual page exec(n) line 110 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              name, depending on the program.[m
-[7m Manual page exec(n) line 111 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 112 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Two or more forward or backward slashes in a row in a path refer to a network path.  For example, a simple  concatenation  of  the[m
-[7m Manual page exec(n) line 113 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              root  directory  [1mc:/ [22mwith a subdirectory [1m/windows/system [22mwill yield [1mc://windows/system [22m(two slashes together), which refers to the[m
-[7m Manual page exec(n) line 114 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              mount point called [1msystem [22mon the machine called [1mwindows [22m(and the [1mc:/ [22mis ignored), and  is  not  equivalent  to  [1mc:/windows/system[22m,[m
-[7m Manual page exec(n) line 115 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              which describes a directory on the current computer.  The [1mfile join [22mcommand should be used to concatenate path components.[m
-[7m Manual page exec(n) line 116 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 117 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Note that there are two general types of Win32 console applications:[m
-[7m Manual page exec(n) line 118 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 119 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                     [1]    CLI — CommandLine Interface, simple stdio exchange. [1mnetstat.exe [22mfor example.[m
-[7m Manual page exec(n) line 120 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 121 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                     [2]    TUI  —  Textmode User Interface, any application that accesses the console API for doing such things as cursor move‐[m
-[7m Manual page exec(n) line 122 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                            ment, setting text color, detecting key presses and mouse movement, etc.  An example would be [1mtelnet.exe  [22mfrom  Win‐[m
-[7m Manual page exec(n) line 123 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                            dows 2000.  These types of applications are not common in a windows environment, but do exist.[m
-[7m Manual page exec(n) line 124 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 125 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mexec  [22mwill  not  work well with TUI applications when a console is not present, as is done when launching applications under wish.[m
-[7m Manual page exec(n) line 126 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              It is desirable to have console applications hidden and detached.  This is a designed-in limitation as [1mexec [22mwants  to  communicate[m
-[7m Manual page exec(n) line 127 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              over pipes.  The Expect extension addresses this issue when communicating with a TUI application.[m
-[7m Manual page exec(n) line 128 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 129 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              When attempting to execute an application, [1mexec [22mfirst searches for the name as it was specified.  Then, in order, [1m.com[22m, [1m.exe[22m, [1m.bat[0m[m
-[7m Manual page exec(n) line 130 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              and [1m.cmd [22mare appended to the end of the specified name and it searches for the longer name.  If a directory name was not specified[m
-[7m Manual page exec(n) line 131 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              as  part  of the application name, the following directories are automatically searched in order when attempting to locate the ap‐[m
-[7m Manual page exec(n) line 132 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              plication:[m
-[7m Manual page exec(n) line 133 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 134 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              •  The directory from which the Tcl executable was loaded.[m
-[7m Manual page exec(n) line 135 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              •  The current directory.[m
-[7m Manual page exec(n) line 137 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 138 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              •  The Windows 32-bit system directory.[m
-[7m Manual page exec(n) line 139 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 140 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              •  The Windows home directory.[m
-[7m Manual page exec(n) line 141 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              •  The directories listed in the path.[m
-[7m Manual page exec(n) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              In order to execute shell built-in commands like [1mdir [22mand [1mcopy[22m, the caller must prepend the desired command with “[1mcmd.exe /c [22m”  be‐[m
-[7m Manual page exec(n) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              cause built-in commands are not implemented using executables.[m
-[7m Manual page exec(n) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mUnix [22m(including Mac OS X)[m
-[7m Manual page exec(n) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              The [1mexec [22mcommand is fully functional and works as described.[m
-[7m Manual page exec(n) line 149 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 150 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mUNIX EXAMPLES[0m[m
-[7m Manual page exec(n) line 151 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Here are some examples of the use of the [1mexec [22mcommand on Unix.  To execute a simple program and get its result:[m
-[7m Manual page exec(n) line 152 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 153 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mexec [22muname -a[m
-[7m Manual page exec(n) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mWORKING WITH NON-ZERO RESULTS[0m[m
-[7m Manual page exec(n) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       To  execute  a program that can return a non-zero result, you should wrap the call to [1mexec [22min [1mcatch [22mand check the contents of the [1m-error‐[0m[m
-[7m Manual page exec(n) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mcode [22mreturn option if you have an error:[m
-[7m Manual page exec(n) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 159 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              set status 0[m
-[7m Manual page exec(n) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              if {[catch {[1mexec [22mgrep foo bar.txt} results options]} {[m
-[7m Manual page exec(n) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                  set details [dict get $options -errorcode][m
-[7m Manual page exec(n) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                  if {[lindex $details 0] eq "CHILDSTATUS"} {[m
-[7m Manual page exec(n) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      set status [lindex $details 2][m
-[7m Manual page exec(n) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                  } else {[m
-[7m Manual page exec(n) line 165 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      # Some other error; regenerate it to let caller handle[m
-[7m Manual page exec(n) line 166 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      return -options $options -level 0 $results[m
-[7m Manual page exec(n) line 167 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                  }[m
-[7m Manual page exec(n) line 168 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              }[m
-[7m Manual page exec(n) line 169 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 170 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This is more easily written using the [1mtry [22mcommand, as that makes it simpler to trap specific types of errors. This  is  done  using  code 2[m
-[7m Manual page exec(n) line 171 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       like this:                                                                                                                                2[m
-[7m Manual page exec(n) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              try {                                                                                                                              2[m
-[7m Manual page exec(n) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                  set results [[1mexec [22mgrep foo bar.txt]                                                                                            2[m
-[7m Manual page exec(n) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                  set status 0                                                                                                                   2[m
-[7m Manual page exec(n) line 176 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              } trap CHILDSTATUS {results options} {                                                                                             2[m
-[7m Manual page exec(n) line 177 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                  set status [lindex [dict get $options -errorcode] 2]                                                                           2[m
-[7m Manual page exec(n) line 178 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              }                                                                                                                                  2[m
-[7m Manual page exec(n) line 179 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 180 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mWORKING WITH QUOTED ARGUMENTS[0m[m
-[7m Manual page exec(n) line 181 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       When  translating a command from a Unix shell invocation, care should be taken over the fact that single quote characters have no special[m
-[7m Manual page exec(n) line 182 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       significance to Tcl.  Thus:[m
-[7m Manual page exec(n) line 183 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 184 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              awk '{sum += $1} END {print sum}' numbers.list[m
-[7m Manual page exec(n) line 185 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 186 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       would be translated into something like:[m
-[7m Manual page exec(n) line 187 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 188 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mexec [22mawk {{sum += $1} END {print sum}} numbers.list[m
-[7m Manual page exec(n) line 189 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 190 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mWORKING WITH GLOBBING[0m[m
-[7m Manual page exec(n) line 191 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If you are converting invocations involving shell globbing, you should remember that Tcl does not handle globbing or expand  things  into[m
-[7m Manual page exec(n) line 192 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       multiple arguments by default.  Instead you should write things like this:[m
-[7m Manual page exec(n) line 193 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 194 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mexec [22mls -l {*}[glob *.tcl][m
-[7m Manual page exec(n) line 195 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 196 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mWORKING WITH USER-SUPPLIED SHELL SCRIPT FRAGMENTS[0m[m
-[7m Manual page exec(n) line 197 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       One  useful  technique  can be to expose to users of a script the ability to specify a fragment of shell script to execute that will have[m
-[7m Manual page exec(n) line 198 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       some data passed in on standard input that was produced by the Tcl program.  This is a common technique for using  the  [4mlpr[24m  program  for[m
-[7m Manual page exec(n) line 199 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       printing.  By far the simplest way of doing this is to pass the user's script to the user's shell for processing, as this avoids a lot of[m
-[7m Manual page exec(n) line 200 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       complexity with parsing other languages.[m
-[7m Manual page exec(n) line 201 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 202 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              set lprScript [[4mget[24m [4mfrom[24m [4muser...[24m][m
-[7m Manual page exec(n) line 203 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              set postscriptData [[4mgenerate[24m [4msomehow...[24m][m
-[7m Manual page exec(n) line 204 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 205 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mexec [22m$env(SHELL) -c $lprScript << $postscriptData[m
-[7m Manual page exec(n) line 206 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 207 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mWINDOWS EXAMPLES[0m[m
-[7m Manual page exec(n) line 208 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Here are some examples of the use of the [1mexec [22mcommand on Windows.  To start an instance of [4mnotepad[24m editing a file without waiting for the[m
-[7m Manual page exec(n) line 209 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       user to finish editing the file:[m
-[7m Manual page exec(n) line 210 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 211 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mexec [22mnotepad myfile.txt &[m
-[7m Manual page exec(n) line 212 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 213 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       To print a text file using [4mnotepad[24m:[m
-[7m Manual page exec(n) line 214 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 215 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mexec [22mnotepad /p myfile.txt[m
-[7m Manual page exec(n) line 216 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 217 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mWORKING WITH CONSOLE PROGRAMS[0m[m
-[7m Manual page exec(n) line 218 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If a program calls other programs, such as is common with compilers, then you may need to resort to batch files to hide the console  win‐[m
-[7m Manual page exec(n) line 219 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       dows that sometimes pop up:[m
-[7m Manual page exec(n) line 220 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 221 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mexec [22mcmp.bat somefile.c -o somefile[m
-[7m Manual page exec(n) line 222 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 223 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       With the file [4mcmp.bat[24m looking something like:[m
-[7m Manual page exec(n) line 224 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 225 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              @gcc %*[m
-[7m Manual page exec(n) line 226 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 227 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or like another variant using single parameters:[m
-[7m Manual page exec(n) line 228 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 229 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              @gcc %1 %2 %3 %4 %5 %6 %7 %8 %9[m
-[7m Manual page exec(n) line 230 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 231 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mWORKING WITH COMMAND BUILT-INS[0m[m
-[7m Manual page exec(n) line 232 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Sometimes  you need to be careful, as different programs may have the same name and be in the path. It can then happen that typing a com‐[m
-[7m Manual page exec(n) line 233 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       mand at the DOS prompt finds [4ma[24m [4mdifferent[24m [4mprogram[24m than the same command run via [1mexec[22m. This is because of the (documented)  differences  in[m
-[7m Manual page exec(n) line 234 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       behaviour between [1mexec [22mand DOS batch files.[m
-[7m Manual page exec(n) line 235 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 236 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       When  in  doubt,  use the command [1mauto_execok[22m: it will return the complete path to the program as seen by the [1mexec [22mcommand.  This applies[m
-[7m Manual page exec(n) line 237 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       especially when you want to run “internal” commands like [4mdir[24m from a Tcl script (if you just want to list filenames,  use  the  [1mglob  [22mcom‐[m
-[7m Manual page exec(n) line 238 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       mand.)  To do that, use this:[m
-[7m Manual page exec(n) line 239 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 240 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mexec [22m{*}[auto_execok dir] *.tcl[m
-[7m Manual page exec(n) line 241 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 242 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1mWORKING WITH NATIVE FILENAMES[0m[m
-[7m Manual page exec(n) line 243 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Many  programs  on Windows require filename arguments to be passed in with backslashes as pathname separators. This is done with the help[m
-[7m Manual page exec(n) line 244 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       of the [1mfile nativename [22mcommand. For example, to make a directory (on NTFS) encrypted so that only the current user can access it requires[m
-[7m Manual page exec(n) line 245 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       use of the [4mCIPHER[24m command, like this:[m
-[7m Manual page exec(n) line 246 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 247 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              set secureDir "~/Desktop/Secure Directory"[m
-[7m Manual page exec(n) line 248 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              file mkdir $secureDir[m
-[7m Manual page exec(n) line 249 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mexec [22mCIPHER /e /s:[file nativename $secureDir][m
-[7m Manual page exec(n) line 250 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 251 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE ALSO[0m[m
-[7m Manual page exec(n) line 252 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       error(n), file(n), open(n)[m
-[7m Manual page exec(n) line 253 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 254 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mKEYWORDS[0m[m
-[7m Manual page exec(n) line 255 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       execute, pipeline, redirection, subprocess[m
-[7m Manual page exec(n) line 256 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
-[7m Manual page exec(n) line 257 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KTcl                                                                    8.5                                                               [4mexec[24m(n)[m
-[7m Manual page exec(n) line 258 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       use of the [4mCIPHER[24m command, like this:[m
-[13;1H[K[7m Manual page exec(n) line 257/269 99% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KTcl                                                                    8.5                                                               [4mexec[24m(n)[m
-[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page exec(n) line 258/269 (END) (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/Process
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+[1mprocessflow.c:110:34: [0m[0;1;35mwarning: [0m[1mformat specifies type 'int' but the argument has type 'int *' [-Wformat][0m
+  110 |                     printf("%d", pipes[i]);[0m
+      | [0;1;32m                            ~~   ^~~~~~~~
+[0m1 warning generated.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+[1mprocessflow.c:110:34: [0m[0;1;35mwarning: [0m[1mformat specifies type 'int' but the argument has type 'int (*)[2]' [-Wformat][0m
+  110 |                     printf("%d", &pipes[i]);[0m
+      | [0;1;32m                            ~~   ^~~~~~~~~
+[0m1 warning generated.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+[1mprocessflow.c:110:47: [0m[0;1;35mwarning: [0m[1mdata argument not used by format string [-Wformat-extra-args][0m
+  110 |                     printf("%d", pipes[i][0], pipes[i][1]);[0m
+      | [0;1;32m                           ~~~~               ^
+[0m1 warning generated.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow
+[?2004lprocessflow> run pipe test
+Erro: tarefa não existe.
+processflow> ^[[A    run pipe
+Uso: run <modo> <task1> <...>
+processflow> task teste arg
+processflow> run teste arg         pipe teste
+processflow> Erro: exec falhou.: No such file or directory
+^Z
+[1]+  Stopped                 ./processflow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow
+[?2004lprocessflow> task teste arg
+processflow> run pipe teste
+processflow> Erro: exec falhou.: No such file or directory
+^Z
+[2]+  Stopped                 ./processflow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ task listar /bin/ls -l
+[?2004lCommand 'task' not found, but can be installed with:
+sudo snap install task         # version v3.51.1, or
+sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
+See 'snap info task' for additional versions.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ task listar /bin/ls -l[9P./processflow
+[?2004lprocessflow> ^[[A^[[A        task listar /bin/ls -l
+processflow> task ordenar /usr/bin/sort
+processflow> task contar /usr/bin/wc -l
+processflow> run pipe listar ordenar contar
+0
+3
+4
+1
+5
+6
+processflow> total 68
+-rw-r--r-- 1 skickle skickle   130 Aug 19 17:39 Makefile
+-rw-r--r-- 1 skickle skickle    13 Aug 17 16:01 README.md
+-rw-r--r-- 1 skickle skickle  7335 Aug 19 17:34 Relatorio.md
+-rw-r--r-- 1 skickle skickle 16002 Aug 19 17:35 evidencias.log
+-rwxr-xr-x 1 skickle skickle 16936 Aug 20 13:18 processflow
+-rw-r--r-- 1 skickle skickle  4634 Aug 20 13:19 processflow.c
+-rw-r--r-- 1 skickle skickle   319 Aug 19 16:22 process

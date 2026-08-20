@@ -1,4 +1,3 @@
-#define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -90,11 +89,13 @@ int main(int argc, char **argv) {
 
         //run
         if (strcmp(tokens[0], "run") == 0) {
+            int pipes[MAX_TASKS - 1][2];
+
             if (n < 3) {
                 fprintf(stderr, "Uso: run <modo> <task1> <...>\n");
                 continue;
             }
-            if (strcmp(tokens[1], "sequential") != 0 && strcmp(tokens[1], "parallel") != 0) {
+            if (strcmp(tokens[1], "sequential") != 0 && strcmp(tokens[1], "parallel") != 0 && strcmp(tokens[1], "pipe") != 0) {
                 fprintf(stderr, "Escolha um dos modos válidos: 'sequential' ou 'parallel'\n");
                 continue;
             }
@@ -102,6 +103,12 @@ int main(int argc, char **argv) {
             pid_t pids[MAX_TASKS];  
             int k = 0;              
             int status;            
+
+            if (strcmp(tokens[1], "pipe") == 0) {
+                for (int i = 0; i < n-3; i++) {
+                    pipe(pipes[i]);
+                }
+            }
 
             for (int i = 2; i < n; i++) {
                 Task *t = NULL;
@@ -122,6 +129,19 @@ int main(int argc, char **argv) {
                     continue;
                 }
                 else if (pid == 0) {
+                    if (strcmp(tokens[1], "pipe") == 0) {
+                        int pos = i - 2;
+                        if (pos > 0) {
+                            dup2(pipes[pos - 1][0], 0);
+                        }
+                        if  (pos < n - 3) {
+                            dup2(pipes[pos][1], 1);
+                        }
+                        for (int p = 0; p < n - 3; p++) {
+                            close(pipes[p][0]);
+                            close(pipes[p][1]);
+                        }
+                    }
                     execvp(t->programa, t->args);
                     perror("Erro: exec falhou.");
                     _exit(1);
@@ -130,12 +150,18 @@ int main(int argc, char **argv) {
                     if (strcmp(tokens[1], "sequential") == 0) {
                         waitpid(pid, &status, 0);
                     }
-                    else if (strcmp(tokens[1], "parallel") == 0) {
+                    else if (strcmp(tokens[1], "parallel") == 0 || strcmp(tokens[1], "pipe") == 0) {
                         pids[k++] = pid;
                     }
                 }
             }
-            if (strcmp(tokens[1], "parallel") == 0) {
+            if (strcmp(tokens[1], "pipe") == 0) {
+                for (int p = 0; p < n - 3; p++) {
+                    close(pipes[p][0]);
+                    close(pipes[p][1]);
+                }
+            }
+            if (strcmp(tokens[1], "parallel") == 0 || strcmp(tokens[1], "pipe") == 0) {
                 for (int i = 0; i < k; i++) {
                     waitpid(pids[i], &status, 0);
                 }
