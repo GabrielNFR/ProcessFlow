@@ -406,3 +406,63 @@ There are stopped jobs.
 [?2004lexit
 
 Script done on 2026-08-20 19:03:22-03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2026-08-21 14:56:53-03:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="150" LINES="13"]
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean
+[?2004lrm -f processflow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean && MAKE
+[?2004lrm -f processflow
+MAKE: command not found
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean && MAKE[K[K[K[Kmake
+[?2004lrm -f processflow
+clang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ man 2 open [K[K[K[K[K[K[K[K[K[K[K./processflow
+[?2004lprocessflow> input ordenar             tras   ask ordenar /usr/bin/sort
+processflow> input ordenar nomes     teste.pf  txt
+processflow> output orn denar resultado.txt
+processflow> run sequentia         ordenar
+processflow> run ordenar
+processflow> run ordenar
+Erro: Falha ao escrever no arquivo: Permission denied
+processflow> processflow> processflow> processflow> processflow> processflow> processflow> processflow> processflow> d run e
+Erro: tarefa 'e' não existe.
+processflow> run ordenar
+processflow> pwd
+processflow> whoam     exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ id
+[?2004luid=1000(skickle) gid=1000(skickle) groups=1000(skickle),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users)
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ pwd
+[?2004l/home/skickle/ProcessFlow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ wh[K[Kls -ld "$()p)w)d)[C"
+[?2004ldrwxr-xr-x 3 skickle skickle 4096 Aug 21 15:25 [0m[01;34m/home/skickle/ProcessFlow[0m
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ touch test_write.txt && echo "touch OK" || echo "touch Falhou"
+[?2004ltouch OK
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ls -l test_write.txt
+[?2004l-rw-r--r-- 1 skickle skickle 0 Aug 21 15:27 test_write.txt
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ rm -f test_write.txt
+[?2004l[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ date
+[?2004lFri Aug 21 15:28:04 -03 2026
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make clean && make
+[?2004lrm -f processflow
+clang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ task ordenar /usr/bin/sort
+[?2004lCommand 'task' not found, but can be installed with:
+sudo snap install task         # version v3.51.1, or
+sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
+See 'snap info task' for additional versions.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ task /ust[Kr/bin/sort
+[?2004lCommand 'task' not found, but can be installed with:
+sudo snap install task         # version v3.51.1, or
+sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
+See 'snap info task' for additional versions.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow
+[?2004lprocessflow> task ordenar /usrt /bin/sort
+processflow> input ordenar teste.txt
+processflow> output ordenar resultado.txt
+processflow> run ordenar
+processflow> exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-21 15:33:07-03:00 [COMMAND_EXIT_CODE="0"]

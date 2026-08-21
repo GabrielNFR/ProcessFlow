@@ -14,8 +14,5 @@ typedef struct {
     int append;
 } Task;
 
-extern Task tasks[MAX_TASKS];
-extern int numTasks;
-
 #endif
 

@@ -3,3 +3,5 @@ processflow
 *.o
 *.md
 !README.md
+*.png
+*.txt

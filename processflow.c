@@ -3,6 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/wait.h>
+#include <fcntl.h>
 
 #include "processflow.h"
 
@@ -84,6 +85,9 @@ int main(int argc, char **argv) {
                 t->args[j++] = strdup(tokens[i]);
             }
             t->args[j] = NULL;
+            t->inputFile = NULL;
+            t->outputFile = NULL;
+            t->append = 0;
             numTasks++;
         }
 
@@ -150,6 +154,35 @@ int main(int argc, char **argv) {
                         for (int p = 0; p < n - start - 1; p++) {
                             close(pipes[p][0]);
                             close(pipes[p][1]);
+                        }
+                    }
+                    if (t->inputFile != NULL) {
+                        int fd = open(t->inputFile, O_RDONLY);
+                        if (fd != -1) {
+                            dup2(fd, 0);
+                            close(fd);
+                        }
+                        else {
+                            perror("Erro: Arquivo não existe.");
+                            _exit(1);
+                        }
+                    }
+                    if (t->outputFile != NULL && !t->append) {
+                        int fd = open(t->outputFile, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+                        if (fd != -1) {
+                            dup2(fd, 1);
+                            close(fd);
+                        }
+                        else {
+                            perror("Erro: Falha ao escrever no arquivo");
+                            _exit(1);
+                        }
+                    }
+                    if (t->outputFile && t->append) {
+                        int fd = open(t->outputFile, O_WRONLY | O_CREAT | O_APPEND, 0644); 
+                        if (fd != -1) {
+                            dup2(fd, 1);
+                            close(fd);
                         }
                     }
                     execvp(t->programa, t->args);
