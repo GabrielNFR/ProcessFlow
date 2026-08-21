@@ -14,5 +14,14 @@ typedef struct {
     int append;
 } Task;
 
+typedef struct {
+    int id;
+    pid_t pid;
+    char *nome;
+    int terminou;
+} Job;
+
+void rodarNoFilho(Task *t);
+
 #endif
 

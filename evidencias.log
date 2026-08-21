@@ -466,3 +466,130 @@ processflow> exit
 [?2004lexit
 
 Script done on 2026-08-21 15:33:07-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-21 18:49:17-03:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="150" LINES="12"]
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ date
+[?2004lFri Aug 21 18:49:21 -03 2026
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ whoami
+[?2004lskickle
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ pwd
+[?2004l/home/skickle/ProcessFlow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lmake: 'processflow' is up to date.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow
+[?2004lprocessflow> ra  task mostrar /bin/pwd
+processflow> run mostrar
+/home/skickle/ProcessFlow
+processflow> wok rkdir /naoexiste
+Erro: diretorio não existe.: No such file or directory
+processflow> workdir /tmp
+processflow> run mostrar
+/tmp
+processflow> workdir na  /naoexiste
+Erro: diretorio não existe.: No such file or directory
+processflow> ^[[A^[[A        run mostrar
+/tmp
+processflow> exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ [K]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+In file included from processflow.c:8:
+[1m./processflow.h:22:6: [0m[0;1;31merror: [0m[1mexpected ';' after top level declarator[0m
+   22 | } Job[0m
+      | [0;1;32m     ^
+[0m      | [0;32m     ;
+[0m1 error generated.
+make: *** [Makefile:2: processflow] Error 1
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+[1mprocessflow.c:294:74: [0m[0;1;35mwarning: [0m[1mdata argument not used by format string [-Wformat-extra-args][0m
+  294 |                 printf("[%d] %d\n", jobs[numJobs].id, jobs[numJobs].pid, jobs[numJobs].nome);[0m
+      | [0;1;32m                       ~~~~~~~~~~~                                       ^
+[0m1 warning generated.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make
+[?2004lclang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./proice[K[K[Kcessflow teste1-entrada.txt
+[?2004ltask t1 /bin/echo primeiro
+task t2 /bin/echo segundo
+run sequential t1 t2
+primeiro
+segundo
+exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow teste1-entrada.txt[1P-entrada.txt2-entrada.txt
+[?2004ltask gerar /usr/bin/printf banana\nabacaxi\nmaca\n
+task ordenar /usr/bin/sort
+task copiar /bin/cat
+run pipe gerar ordenar copiar
+abacaxi
+banana
+maca
+exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow teste2-entrada.txt[1P-entrada.txt3-entrada.txt
+[?2004ltask escrever /bin/echo linha-um
+output escrever saida.txt
+run escrever
+task adicionar /bin/echo linha-dois
+append adicionar saida.txt
+run adicionar
+task mostrar /bin/cat
+input mostrar saida.txt
+run mostrar
+linha-um
+linha-dois
+exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ make 
+[?2004lclang -Wall -Wextra -D_POSIX_C_SOURCE=200809L -o processflow processflow.c
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-21 20:19:55-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-21 20:23:38-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="150" LINES="12"]
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ tas[K[K[K./processflow
+[?2004lprocessflow> start dormir            task orn   dormir /bin/sleep/ 3 
+processflow> start dormir
+[1] 167368
+processflow> Erro: exec falhou.: No such file or directory
+ aa   ^Z
+[1]+  Stopped                 ./processflow
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ task dormir /bin/sleep 3
+[?2004lCommand 'task' not found, but can be installed with:
+sudo snap install task         # version v3.51.1, or
+sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
+See 'snap info task' for additional versions.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ ./processflow
+[?2004lprocessflow> task do  dormir /bin/sleep 3
+processflow> start dormir
+[1] 167682
+processflow> jobs
+[1] 167682 dormir (terminou)
+processflow> ^[[A^[[A        start dormir
+[2] 167781
+processflow> jobs
+[1] 167682 dormir (terminou)
+[2] 167781 dormir (rodando)
+processflow> jobs
+[1] 167682 dormir (terminou)
+[2] 167781 dormir (terminou)
+processflow> wait 1
+processflow> jobs
+[1] 167682 dormir (terminou)
+[2] 167781 dormir (terminou)
+processflow> wait 2
+processflow> jobs
+[1] 167682 dormir (terminou)
+[2] 167781 dormir (terminou)
+processflow> wait 3
+Erro: job não encontrado.
+processflow> s start domrmi    rmir
+[3] 168246
+processflow> wait 3
+processflow> jobs
+[1] 167682 dormir (terminou)
+[2] 167781 dormir (terminou)
+[3] 168246 dormir (terminou)
+processflow> exit
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[?2004lexit
+There are stopped jobs.
+[?2004h]0;skickle@ROADLESS1: ~/ProcessFlow[01;32mskickle@ROADLESS1[00m:[01;34m~/ProcessFlow[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-21 20:28:46-03:00 [COMMAND_EXIT_CODE="1"]

@@ -10,6 +10,9 @@
 int main(int argc, char **argv) {
     Task tasks [MAX_TASKS];
     int numTasks = 0;
+
+    Job jobs[MAX_TASKS];
+    int numJobs = 0;
     
     FILE *input = stdin;
     int interativo = 1;
@@ -156,42 +159,14 @@ int main(int argc, char **argv) {
                             close(pipes[p][1]);
                         }
                     }
-                    if (t->inputFile != NULL) {
-                        int fd = open(t->inputFile, O_RDONLY);
-                        if (fd != -1) {
-                            dup2(fd, 0);
-                            close(fd);
-                        }
-                        else {
-                            perror("Erro: Arquivo não existe.");
-                            _exit(1);
-                        }
-                    }
-                    if (t->outputFile != NULL && !t->append) {
-                        int fd = open(t->outputFile, O_WRONLY | O_CREAT | O_TRUNC, 0644);
-                        if (fd != -1) {
-                            dup2(fd, 1);
-                            close(fd);
-                        }
-                        else {
-                            perror("Erro: Falha ao escrever no arquivo");
-                            _exit(1);
-                        }
-                    }
-                    if (t->outputFile && t->append) {
-                        int fd = open(t->outputFile, O_WRONLY | O_CREAT | O_APPEND, 0644); 
-                        if (fd != -1) {
-                            dup2(fd, 1);
-                            close(fd);
-                        }
-                    }
-                    execvp(t->programa, t->args);
-                    perror("Erro: exec falhou.");
-                    _exit(1);
+                    rodarNoFilho(t);
                 }
                 else if (pid > 0) {
                     if (strcmp(modo, "sequential") == 0) {
                         waitpid(pid, &status, 0);
+                        if (WIFEXITED(status) && WEXITSTATUS(status) != 0) {
+                            fprintf(stderr, "Erro: tarefa '%s' terminou com código %d\n", t->nome, WEXITSTATUS(status));
+                        }
                     }
                     else if (strcmp(modo, "parallel") == 0 || strcmp(modo, "pipe") == 0) {
                         pids[k++] = pid;
@@ -207,6 +182,9 @@ int main(int argc, char **argv) {
             if (strcmp(modo, "parallel") == 0 || strcmp(modo, "pipe") == 0) {
                 for (int i = 0; i < k; i++) {
                     waitpid(pids[i], &status, 0);
+                    if (WIFEXITED(status) && WEXITSTATUS(status) != 0) {
+                        fprintf(stderr, "Erro: processo terminou com código %d\n", WEXITSTATUS(status));
+                    }
                 }
             }
         }
@@ -275,7 +253,128 @@ int main(int argc, char **argv) {
                 continue;
             }
         }
-    }
+
+        //workdir
+        if (strcmp(tokens[0], "workdir") == 0) {
+            if (n < 2) {
+                fprintf(stderr, "Uso: workdir <diretorio>\n");
+                continue;
+            }
+            if (chdir(tokens[1]) != 0) {
+                perror("Erro: diretorio não existe.");
+            }
+        }
+
+        //start
+        if (strcmp(tokens[0], "start") == 0) {
+            if (n < 2) {
+                fprintf(stderr, "Uso: start <tarefa>\n");
+                continue;
+            }
+
+            Task *t = NULL;
+            for (int i = 0; i < numTasks; i++) {
+                if (strcmp(tokens[1], tasks[i].nome) == 0) {
+                    t = &tasks[i];
+                    break;
+                }
+            }
+            if (t == NULL) {
+                fprintf(stderr, "Erro: tarefa '%s' não existe.\n", tokens[1]);
+                continue;
+            }
+
+            pid_t pid = fork();
+            if (pid < 0) {
+                fprintf(stderr, "Erro: fork falhou.\n");
+                continue;
+            }
+            else if (pid == 0) {
+                rodarNoFilho(t);
+            }
+            else if (pid > 0) {
+                jobs[numJobs].id = numJobs + 1;
+                jobs[numJobs].pid = pid;
+                jobs[numJobs].nome = t->nome;
+                jobs[numJobs].terminou = 0;
+                printf("[%d] %d\n", jobs[numJobs].id, jobs[numJobs].pid);
+                numJobs++;
+            }
+        }
+
+        //jobs
+        if (strcmp(tokens[0], "jobs") == 0) {
+            for (int i = 0; i < numJobs; i++) {
+                int status;
+                pid_t r = waitpid(jobs[i].pid, &status, WNOHANG);
+                if (r == jobs[i].pid || r == -1) {
+                    jobs[i].terminou = 1;
+                    if (WIFEXITED(status) && WEXITSTATUS(status) != 0) {
+                        fprintf(stderr, "Erro: job %d terminou com código %d\n", jobs[i].id, WEXITSTATUS(status));
+                    }
+                }
+                printf("[%d] %d %s (%s)\n", jobs[i].id, jobs[i].pid, jobs[i].nome, jobs[i].terminou ? "terminou" : "rodando");
+            }
+        }
+
+        //wait
+        if (strcmp(tokens[0], "wait") == 0) {
+            if (n < 2) {
+                fprintf(stderr, "Uso: wait <jobID>\n");
+                continue;
+            }
+            int status = 0;
+            int achou = 0;
+            for (int i = 0; i < numJobs; i++) {
+                if (atoi(tokens[1]) == jobs[i].id) {
+                    waitpid(jobs[i].pid, &status, 0);
+                    achou = 1;
+                }
+            }
+            if (!achou) {
+                fprintf(stderr, "Erro: job não encontrado.\n");
+            }
+        }
+    } 
     if (argc == 2) fclose(input);
     return 0;
+}
+
+void rodarNoFilho(Task *t) {
+    if (t->inputFile != NULL) {
+        int fd = open(t->inputFile, O_RDONLY);
+        if (fd != -1) {
+            dup2(fd, 0);
+            close(fd);
+        }
+        else {
+            perror("Erro: Arquivo não existe.");
+            _exit(1);
+        }
+    }
+    if (t->outputFile != NULL && !t->append) {
+        int fd = open(t->outputFile, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+        if (fd != -1) {
+            dup2(fd, 1);
+            close(fd);
+        }
+        else {
+            perror("Erro: Falha ao escrever no arquivo");
+            _exit(1);
+        }
+    }
+    if (t->outputFile && t->append) {
+        int fd = open(t->outputFile, O_WRONLY | O_CREAT | O_APPEND, 0644);
+        if (fd != -1) {
+            dup2(fd, 1);
+            close(fd);
+        }
+        else {
+            perror("Erro: Falha ao escrever no arquivo");
+            _exit(1);
+        }
+    }
+    execvp(t->programa, t->args);
+    perror("Erro: exec falhou.");
+    _exit(1);
 }
