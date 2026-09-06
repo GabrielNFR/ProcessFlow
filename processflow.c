@@ -40,7 +40,10 @@ int main(int argc, char **argv) {
         linha[strcspn(linha, "\n")] = '\0';
 
         if (strlen(linha) == 0) continue;
-        if (!interativo) printf("%s\n", linha);
+        if (!interativo) {
+            printf("%s\n", linha);
+            fflush(stdout);
+        } 
 
         if (strcmp(linha, "exit") == 0) break;
 
